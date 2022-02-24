@@ -12,7 +12,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("GAMEBL"),
+        title: const Text("GAMEBL"),
+        centerTitle: true,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -22,22 +23,22 @@ class HomeScreen extends StatelessWidget {
             children: [
               TextButton(
                   onPressed: () {
-                    var rount =
-                        MaterialPageRoute(builder: (context) => Screen2());
+                    var rount = MaterialPageRoute(
+                        builder: (context) => const Screen2());
                     Navigator.of(context).push(rount);
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.visibility,
                     size: 150,
                     color: Color(0xff747574),
                   )),
               TextButton(
                   onPressed: () {
-                    var rount =
-                        MaterialPageRoute(builder: (context) => Screen2());
+                    var rount = MaterialPageRoute(
+                        builder: (context) => const Screen2());
                     Navigator.of(context).push(rount);
                   },
-                  child: Icon(
+                  child: const Icon(
                     Icons.change_history,
                     size: 150,
                     color: Colors.brown,
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
+            children: const <Widget>[
               Text(
                 '   Place',
               ),
@@ -84,17 +85,6 @@ class HomeScreen extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Text(
-                '   Home',
-              ),
-              Text(
-                'Up',
-              ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               TextButton(
                   onPressed: () {
@@ -122,7 +112,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
+            children:  const <Widget>[
               Text(
                 '   Call',
               ),
